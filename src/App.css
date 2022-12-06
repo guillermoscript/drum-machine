@@ -1,0 +1,95 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+
+
+
+
+
+
+#drum-machine {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#display {
+  background-color: #333;
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+
+.drum-pad {
+  background-color: #444;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.display:nth-child(odd) {
+  background-color: #444;
+}
+
+.display:nth-child(even) {
+  background-color: #333;
+}
+
+.drum-pad:nth-child(odd):hover {
+  background-color: #555;
+  transform: scale(1.1);
+}
+
+.drum-pad:nth-child(even):hover {
+  background-color: #222;
+  transform: scale(1.1);
+}
